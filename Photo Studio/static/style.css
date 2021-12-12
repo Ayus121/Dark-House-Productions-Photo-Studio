@@ -1,0 +1,754 @@
+@import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@700&family=Dancing+Script&family=EB+Garamond&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+    width: 7px;
+}
+
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+    background: linear-gradient(182deg, #000 0%, #fff 100%);
+    outline: 1px solid #212131;
+    border-radius: 5px;
+}
+
+
+/* Header CSS Starts */
+
+header {
+    width: 100%;
+    height: 100vh;
+    background: url('../static/images/bg.jpg');
+    background-size: cover;
+}
+
+header .heading {
+    font-family: 'Corinthia', cursive;
+    color: #ffff;
+    margin-top: 10px 0px;
+    margin-left: 40px;
+    top: 0;
+}
+
+#menu {
+    position: fixed;
+    right: 50px;
+    top: 10px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+    z-index: 2;
+}
+
+#sidenav {
+    padding: 100px 0px;
+    position: fixed;
+    width: 0px;
+    height: 100vh;
+    background: rgba(158, 158, 158, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: inset 10px 10px 10px rgb(204, 204, 204);
+    top: 0;
+    right: 0;
+}
+
+#sidenav ul li {
+    list-style: none;
+}
+
+#sidenav ul li a {
+    font-family: 'EB Garamond', serif;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin: 10px 30px;
+    display: block;
+    padding: 10px;
+}
+
+#sidenav ul li a:hover {
+    background: rgba(240, 239, 239, 0.4);
+    transition: 0.4s;
+}
+
+#sidenav ul li .fa {
+    padding: 0;
+}
+
+.container .heading {
+    top: 0;
+    right: 0;
+    font-family: 'Dancing Script', cursive;
+    font-size: 4rem;
+    color: white;
+    position: absolute;
+    margin-top: 15rem;
+    margin-right: 24rem;
+}
+
+.container p {
+    top: 0;
+    right: 0;
+    font-family: 'Dancing Script', cursive;
+    font-size: 4rem;
+    color: white;
+    position: absolute;
+    margin-top: 20rem;
+    margin-right: 10rem;
+}
+
+.container .btn {
+    top: 0;
+    right: 0;
+    width: 18rem;
+    position: absolute;
+    margin-top: 27rem;
+    margin-right: 22rem;
+    padding: 10px;
+    background-color: rgb(0, 0, 0);
+    border: 2px solid rgb(156, 154, 154);
+    font-size: 1.5rem;
+    font-family: 'EB Garamond', serif;
+    color: white;
+    border-radius: 5px;
+    font-weight: normal;
+}
+
+.container .btn:hover {
+    cursor: pointer;
+    background-color: rgb(83, 83, 83);
+}
+
+
+/* Header CSS Ends */
+
+
+/* Services CSS Starts */
+
+.services .heading {
+    text-align: center;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+    text-transform: normal;
+    margin-top: 50px;
+}
+
+.services .swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.services .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+}
+
+.services .swiper-slide .imgBx {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.services .swiper-slide .imgBx img {
+    width: 100%;
+    height: 300px;
+}
+
+.services .swiper-slide .details {
+    box-sizing: border-box;
+    background-color: white;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.services .swiper-slide .details h3 {
+    margin: 0;
+    padding: 0;
+    font-family: 'EB Garamond', serif;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+}
+
+
+/* Sevices CSS Ends */
+
+
+/*Newsletter  CSS Starts*/
+
+.newsletter {
+    background: url('../static/images/letter2.jpg') center center/cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.newsletter form {
+    max-width: 45rem;
+    margin-left: auto;
+    text-align: center;
+    padding: 5rem 0;
+}
+
+.newsletter form h3 {
+    font-family: 'EB Garamond', serif;
+    font-size: 2.2rem;
+    color: black;
+    padding-bottom: .7rem;
+    font-weight: normal;
+}
+
+.newsletter form .box {
+    width: 50%;
+    margin: .7rem 0;
+    padding: 1rem 1.2rem;
+    font-size: 1rem;
+    border-radius: .5rem;
+    text-transform: none;
+}
+
+.newsletter .btn {
+    font-size: 1rem;
+    font-family: 'EB Garamond', serif;
+    background-color: black;
+    color: white;
+    border: 2px solid grey;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.newsletter .btn:hover {
+    cursor: pointer;
+    background-color: rgb(122, 122, 122);
+}
+
+
+/* Newsletter CSS Ends */
+
+
+/* Portfolio CSS Starts */
+
+.heading-text .heading {
+    text-align: center;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.8rem;
+    text-transform: normal;
+    margin-top: 50px;
+}
+
+.portfolio {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.portfolio .wrapper {
+    max-width: 1100px;
+}
+
+.portfolio .wrapper .gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolio .wrapper .gallery .image {
+    padding: 7px;
+    width: calc(100% / 3);
+}
+
+.portfolio .wrapper .gallery .image span {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+
+.portfolio .wrapper .gallery .image img {
+    width: 100%;
+    vertical-align: middle;
+    transition: all 0.3s ease;
+}
+
+.portfolio .wrapper .gallery .image:hover img {
+    transform: scale(1.1);
+}
+
+.portfolio .preview-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.9);
+    background: #fff;
+    max-width: 700px;
+    width: 100%;
+    z-index: 5;
+    opacity: 0;
+    pointer-events: none;
+    border-radius: 3px;
+    padding: 0 5px 5px 5px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio .preview-box.show {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+    transition: all 0.3s ease;
+}
+
+.portfolio .preview-box .details {
+    display: flex;
+    align-items: center;
+    padding: 12px 15px 12px 10px;
+    justify-content: space-between;
+}
+
+.portfolio .preview-box .details .title {
+    display: flex;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.portfolio .details .title p {
+    margin: 0 5px;
+}
+
+.portfolio .details .title p.current-img {
+    font-weight: 500;
+}
+
+.portfolio .details .icon {
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.portfolio .preview-box .image-box {
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+
+.portfolio .preview-box .image-box .slide {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+    height: 50px;
+    width: 60px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.portfolio .preview-box .image-box .slide.prev {
+    left: 0px;
+}
+
+.portfolio .preview-box .image-box .slide.next {
+    right: 0px;
+}
+
+.portfolio .preview-box .image-box img {
+    width: 100%;
+    border-radius: 0 0 3px 3px;
+}
+
+.shadow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    display: none;
+    background: rgba(0, 0, 0, 0.45);
+}
+
+@media(max-width: 1000px) {
+    .gallery .image {
+        width: calc(100% / 2);
+    }
+}
+
+@media(max-width: 600px) {
+    .gallery .image {
+        width: 100%;
+        padding: 4px;
+    }
+}
+
+
+/* Portfolio CSS Ends */
+
+
+/* Mission CSS Starts */
+
+.mission {
+    margin-top: 50px;
+    padding: 30px;
+}
+
+.mission .content {
+    display: flex;
+}
+
+.mission .content .mission-img {
+    padding-left: 50px;
+    padding-top: 30px;
+}
+
+.mission .content .box {
+    top: 0;
+    right: 0;
+    padding: 34px;
+    width: 560px;
+    height: 315px;
+    margin-left: 10%;
+}
+
+.mission .content .box h2 {
+    text-align: center;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.8rem;
+    text-transform: normal;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.mission .content .box p {
+    text-align: center;
+    color: white;
+    font-family: 'EB Garamond', serif;
+    font-size: 1.8rem;
+    margin-top: 3rem;
+    text-transform: normal;
+}
+
+
+/* Mission CSS Ends */
+
+
+/* Team CSS Starts*/
+
+.team {
+    margin-top: 20px;
+}
+
+.team .heading {
+    text-align: center;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.8rem;
+    text-transform: normal;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.team .main {
+    width: 100%;
+    height: 50vh;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent
+}
+
+.team .main .profile-card {
+    position: relative;
+    font-family: 'EB Garamond', serif;
+    width: 220px;
+    height: 220px;
+    background: linear-gradient(171deg, #646262 0%, #fff 100%);
+    padding: 30px;
+    border-radius: 50%;
+    box-shadow: 0 0 22px #3336;
+    transition: .6s;
+    margin: 0 25px;
+}
+
+.team .main .profile-card:hover {
+    border-radius: 10px;
+    height: 260px;
+}
+
+.team .main .profile-card .img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: .6s;
+    z-index: 99;
+}
+
+.team .main .profile-card .img img {
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 22px #3336;
+    transition: .6s;
+}
+
+.team .main .profile-card:hover .img {
+    transform: translateY(-60px);
+}
+
+.team .main .profile-card:hover img {
+    border-radius: 20%;
+}
+
+.team .main .profile-card .caption {
+    text-align: center;
+    transform: translateY(-80px);
+    opacity: 0;
+    transition: .6s;
+}
+
+.team .main .profile-card:hover .caption {
+    opacity: 1;
+}
+
+.team .main .profile-card .caption h3 {
+    font-size: 21px;
+    font-family: 'EB Garamond', serif;
+}
+
+.team .main .profile-card .caption p {
+    font-size: 15px;
+    color: #00f7ff;
+    font-family: 'EB Garamond', serif;
+    margin: 2px 0 9px 0;
+}
+
+.team .main .profile-card .caption .social-links a {
+    color: black;
+    margin-right: 15px;
+    font-size: 21px;
+    transition: .6s;
+}
+
+.team .main .profile-card .social-links a:hover {
+    color: crimson;
+}
+
+
+/* Team CSS Ends */
+
+
+/* Contact CSS Starts */
+
+.contact {
+    position: relative;
+}
+
+.contact .heading {
+    text-align: center;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.8rem;
+    text-transform: normal;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: url('../static/images/contact1.jpg') center/cover;
+}
+
+.contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+.contact-box input {
+    font-family: 'EB Garamond', serif;
+    font-size: 1rem;
+    background: #1a1a1a;
+    color: white;
+    width: 100%;
+    margin-top: 10px;
+    padding: 0.5rem;
+    border-radius: 9px;
+}
+
+.contact-box textarea {
+    font-family: 'EB Garamond', serif;
+    font-size: 1rem;
+    background: #1a1a1a;
+    color: white;
+    width: 100%;
+    margin-top: 10px;
+    padding: 0.5rem;
+    border-radius: 9px;
+}
+
+.contact-box form {
+    width: 40%;
+}
+
+.contact-box .btn {
+    font-family: 'EB Garamond', serif;
+    margin-top: 1rem;
+    margin-left: 13rem;
+    font-size: 1.1rem;
+    font-family: 'EB Garamond', serif;
+    background-color: black;
+    color: white;
+    border: 2px solid grey;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.contact-box .btn:hover {
+    background: #fff;
+    color: #0d0d0d;
+}
+
+
+/* Contact CSS Ends */
+
+
+/* Footer CSS Starts */
+
+footer {
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    box-shadow: 0 16px 70px -8px rgba(0, 0, 0, 0.25);
+    transition: 0.3s linear;
+}
+
+footer .container {
+    max-width: 1240px;
+    padding: 30px 40px;
+    margin: auto;
+}
+
+footer .container .content-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+footer .container .content-footer .profile .logo-area {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+footer .container .content-footer .profile .logo-area .logo-name {
+    font-size: 1.8rem;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
+    margin-right: 1rem;
+    color: white;
+}
+
+footer .container .content-footer .profile .social-media a {
+    color: white;
+    margin-right: 22px;
+    font-size: 24px;
+}
+
+footer .container .content-footer .profile .social-media a:hover {
+    color: grey;
+}
+
+footer .container .content-footer .service-area {
+    display: flex;
+}
+
+footer .container .content-footer .service-area .service-header {
+    margin-right: 40px;
+}
+
+footer .container .content-footer .service-area .service-header .service-name {
+    color: white;
+    font-family: 'EB Garamond', serif;
+    text-decoration: none;
+    list-style: none;
+    font-weight: 600;
+}
+
+footer .container .content-footer .service-area .service-header li a {
+    text-decoration: none;
+    font-family: 'EB Garamond', serif;
+    list-style: none;
+    color: grey;
+    padding-bottom: 1px;
+    font-weight: 400;
+}
+
+footer .container .content-footer .service-area .service-header li a:hover {
+    color: white;
+}
+
+footer .container .content-footer .service-area .service-header li {
+    margin-bottom: 10px;
+}
+
+hr {
+    height: 1px;
+    border: none;
+    background-color: #1a1a1a;
+    margin-bottom: 1rem;
+}
+
+footer .container .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.875rem;
+}
+
+footer .container .footer-bottom .copy-right {
+    color: rgb(255, 253, 253);
+    display: flex;
+    align-items: center;
+}
+
+footer .container .footer-bottom .copy-right span {
+    margin-left: 8px;
+    font-family: 'EB Garamond', serif;
+    font-weight: 400;
+    letter-spacing: 0.135rem;
+}
+
+footer .container .footer-bottom .tou a {
+    text-decoration: none;
+    list-style: none;
+    font-family: 'EB Garamond', serif;
+    color: grey;
+    margin-left: 1.5rem;
+}
+
+footer .container .footer-bottom .tou a:hover {
+    color: white;
+}
+
+
+/* Footer CSS Ends */
